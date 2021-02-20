@@ -36,6 +36,18 @@
       "type": "shell",
           "script": "../files/jenkins.sh"
           },
+          {
+            "type": "file",
+               "source" : "../files/r1softagent.repo",
+               "destination" : "/tmp/"
+
+
+          },
+          {
+            "type": "shell",
+            "script": "../files/r1softagent.sh"
+          },
+          
         {
         "type": "breakpoint",
         "note": "Wait for you to delete"
