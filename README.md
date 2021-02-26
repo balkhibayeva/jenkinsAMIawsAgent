@@ -1,6 +1,6 @@
-# Create Amazon Machine Image (AMI) using Packer
+# Create Amazon Machine Image (AMI) using Packer with Jenkins pre-installed 
 
-Packer is an open source tool for creating identical machine images for multiple platforms from a single source configuration. Packer is lightweight, runs on every major operating system, and is highly performant, creating machine images for multiple platforms in parallel. Packer does not replace configuration management like Chef or Puppet. In fact, when building images, Packer is able to use tools like Chef or Puppet to install software onto the image.
+Packer is an open source tool for creating identical machine images for multiple platforms from a single source configuration. 
 
 # Prerequisites
 
@@ -100,9 +100,7 @@ Provisioners are responsible for installing and configuring software on the runn
        ]
 
   }
-
-  Variables – Where you define custom variables to easy installation for other type of VM's such as Debian and Ubuntu. 
-
+ 
 ### Create Jenkins AMI 
 
 Run below command to create Jenkins AMI
